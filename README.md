@@ -27,4 +27,6 @@ After you had done the configurations, please type the command below to run the 
 
 `sudo /edx/bin/update edx-platform master`
 
+--> This theme will only affect the theme for CMS of EDX. LMS currently are not available for theme editing. 
+
 **If you lines are unstable, and keep broken pipe in the process of update, please use `tmux` that available in the console. For more information please checkout [here](https://gist.github.com/MohamedAlaa/2961058).**
