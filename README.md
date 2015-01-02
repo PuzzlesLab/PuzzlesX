@@ -8,7 +8,7 @@ Configure Site Name
 
 If want to change the site name for port 80, can go to `edx/app/edxapp`, edit both `lms.env.json` & `cmd.env.json` to update the platform name.
 
-If want to change the studio, can go to `edx/app/edxapp/edx-platform/lms/envs/common.py`, inside there is a host name that you can configure. That will affect whole studio site name. 
+If want to change the studio, can go to `edx/app/edxapp/edx-platform/lms/envs/common.py`, inside there is a host name that you can configure. That will affect whole studio site name. (All the desired change variable should be in here, if not can be found on `edx/app/edxapp/edx-platform/cms/envs/common.py`)
 
 **-> After update the platform name, please run the command for restarting LMS/CMS = `sudo /edx/bin/supervisorctl -c /edx/etc/supervisord.conf restart edxapp:` and workers = `sudo /edx/bin/supervisorctl -c /edx/etc/supervisord.conf restart edxapp_worker:`. After that you may notice the changes**
 
